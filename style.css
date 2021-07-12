@@ -3,3 +3,33 @@ body {
     margin: 0 auto;
     max-width: 500px;
 }
+
+h1 {
+    text-align: center;
+}
+
+.div_recorder {
+    text-align:center;
+}
+
+.div_player {
+    text-align:center;
+}
+
+footer{
+    width:80%;
+    max-width: 500px;
+    margin:20px auto;
+    padding-top:20px;
+    text-align: center;
+}
+
+footer:before{
+    content:"";
+    position:absolute;
+    left:0;
+    display:block;
+    margin-top:-20px;
+    width:100%;
+    border-top:1px solid #AEAEAE;
+}
