@@ -3,16 +3,23 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JSで録音してみるテスト to wav</title>
+    <title>Interaxion Recorder</title>
+    <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <p>wavファイルで保存されます。</p>
+    <h1>Interaxion Recorder</h1>
+    <h2>使い方</h2>
+    <ul>
+      <li><font color="#ff0000">●</font>ボタンで録音開始します。録音を停止するには■ボタンを押してください。</li>
+      <li>録音停止後、「音源ダウンロード」をクリックしてダウンロードしてください。</li>
+      <li>使用するマイクを変更するにはブラウザのアドレスバーのマイクアイコンをクリックしてください。</li>
+      <li>録音データはローカルのみに保存され、どこかにアップロードされるようなことはありません。</li>
+      <li>ブラウザのタブを閉じると録音が失われてしまうので注意してください。</li>
+    </ul>
     <div>
-      <button id="recordBtn">録音</button>
+      <button id="recordBtn" style="padding:10px;font-size:30px;"><font color="#ff0000">●</font></button> <button id="stopBtn" style="padding:10px;font-size:30px">■</button>
       <span id="recordingStatus" style="display: none;">録音中...</span>
-    </div>
-    <div>
-      <button id="stopBtn">停止</button>
+      <p></p>
     </div>
     <div>
       <audio id="player" controls></audio>
@@ -22,4 +29,5 @@
     </div>
     <script src="./main.js" type="module"></script>
   </body>
+  <footer><a href="https://github.com/interaxion-podcast/recorder">ソースコード</footer>
 </html>

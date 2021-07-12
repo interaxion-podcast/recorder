@@ -10,6 +10,7 @@ const recorder = new Recorder()
 
 // 録音ボタンがクリックされたら開始
 recordBtn.addEventListener("click", () => {
+  recordBtn.disabled = true
   status.style = "display: inline;"
   downloadLink.style = "display: none;"
   player.src = ""
