@@ -6,11 +6,13 @@
     <title>JSで録音してみるテスト to wav</title>
   </head>
   <body>
-    <p>録音するテスト。開始10秒で自動ダウンロード</p>
     <p>wavファイルで保存されます。</p>
     <div>
-      <button id="recordingBtn">録音</button>
+      <button id="recordBtn">録音</button>
       <span id="recordingStatus" style="display: none;">録音中...</span>
+    </div>
+    <div>
+      <button id="stopBtn">停止</button>
     </div>
     <div>
       <audio id="player" controls></audio>
